@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { AuthContext } from "./AuthContext";
 import toast from "react-hot-toast";
 
-const ChatContext = createContext();
+ export const ChatContext = createContext();
 
 export const ChatProvider = ({ children }) => {
   const [messages, setMessages] = useState([]);
@@ -94,4 +94,3 @@ export const ChatProvider = ({ children }) => {
   );
 };
 
-export default ChatContext;
