@@ -2,9 +2,10 @@ import express from 'express'
 import mongoose from 'mongoose';
 import User from '../models/User.js'
 
-import { v2 as cloudinary } from 'cloudinary';
+
 import Message from '../models/Message.js';
 import { io, userSocketMap} from '../server.js';
+import cloudinary from '../lib/cloudinary.js';
 
 cloudinary.config({
   cloud_name: 'dsdeulelt',
